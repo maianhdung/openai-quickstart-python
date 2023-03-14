@@ -3,6 +3,11 @@ import os
 import openai
 from flask import Flask, redirect, render_template, request, url_for
 
+#MAD@ them
+from dotenv import load_dotenv
+load_dotenv()
+#End MAD@ them
+
 app = Flask(__name__)
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
